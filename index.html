@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="¡Bienvenido a mi mundo digital! Soy David V, un apasionado desarrollador web especializado en tecnologías frontend como JavaScript y backend con PHP. Descubre mis proyectos innovadores, incluyendo 'DvSpace', una red social basada en PHP. Con un enfoque mobile-first, mi objetivo es fusionar creatividad y funcionalidad para llevar tus ideas web al siguiente nivel. Explora mi portafolio y únete a la experiencia de desarrollo web única que ofrezco.">
+
+    <title>Portafolio</title>
+</head>
+
+<body>
+
+    <div id="loader">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/trefoil.js"></script>
+
+        <l-trefoil size="40" stroke="4" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="white"></l-trefoil>
+    </div>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="page-content">
+            <section id="about">
+                <h2>Hola, mi nombre es David.</h2>
+                <p id="description">
+                </p>
+            </section>
+
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <div class="marquee-tag">HTML5</div>
+                    <div class="marquee-tag">CSS3</div>
+                    <div class="marquee-tag">JavaScript</div>
+                    <div class="marquee-tag">React</div>
+                    <div class="marquee-tag">Vue.js</div>
+                    <div class="marquee-tag">Node.js</div>
+                    <div class="marquee-tag">Python</div>
+                    <div class="marquee-tag">Django</div>
+                    <div class="marquee-tag">Responsive Design</div>
+                    <div class="marquee-tag">UI/UX</div>
+                    <div class="marquee-tag">APIs</div>
+                    <div class="marquee-tag">Git</div>
+                    <div class="marquee-tag">Data Science</div>
+                    <div class="marquee-tag">Machine Learning</div>
+                    <div class="marquee-tag">Artificial Intelligence</div>
+                    <div class="marquee-tag">Web Development</div>
+                    <div class="marquee-tag">Frontend</div>
+                    <div class="marquee-tag">Backend</div>
+                    <div class="marquee-tag">Mobile Development</div>
+                    <div class="marquee-tag">Database Design</div>
+                </div>
+            </div>
+            <br><br><br>
+
+            <div class="marquee-container">
+                <div class="marquee-content marquee-reverse">
+                    <div class="marquee-tag">SQL</div>
+                    <div class="marquee-tag">MongoDB</div>
+                    <div class="marquee-tag">GraphQL</div>
+                    <div class="marquee-tag">RESTful</div>
+                    <div class="marquee-tag">Cybersecurity</div>
+                    <div class="marquee-tag">Cloud Computing</div>
+                    <div class="marquee-tag">Linux</div>
+                    <div class="marquee-tag">DevOps</div>
+                    <div class="marquee-tag">Blockchain</div>
+                    <div class="marquee-tag">Agile</div>
+                    <div class="marquee-tag">Scrum</div>
+                    <div class="marquee-tag">Firebase</div>
+                    <div class="marquee-tag">TensorFlow</div>
+                    <div class="marquee-tag">Jupyter</div>
+                    <div class="marquee-tag">Serverless</div>
+                    <div class="marquee-tag">Cloud Storage</div>
+                    <div class="marquee-tag">Mobile App Development</div>
+                    <div class="marquee-tag">Data Analysis</div>
+                    <div class="marquee-tag">API Integration</div>
+                    <div class="marquee-tag">Security Best Practices</div>
+                </div>
+            </div>
+            <br><br><br>
+
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <div class="marquee-tag">Responsive Design</div>
+                    <div class="marquee-tag">UI/UX</div>
+                    <div class="marquee-tag">APIs</div>
+                    <div class="marquee-tag">Git</div>
+                    <div class="marquee-tag">Data Science</div>
+                    <div class="marquee-tag">Machine Learning</div>
+                    <div class="marquee-tag">Artificial Intelligence</div>
+                    <div class="marquee-tag">SQL</div>
+                    <div class="marquee-tag">MongoDB</div>
+                    <div class="marquee-tag">GraphQL</div>
+                    <div class="marquee-tag">RESTful</div>
+                    <div class="marquee-tag">Cybersecurity</div>
+                    <div class="marquee-tag">Cloud Computing</div>
+                    <div class="marquee-tag">Linux</div>
+                    <div class="marquee-tag">DevOps</div>
+                    <div class="marquee-tag">Continuous Integration</div>
+                    <div class="marquee-tag">User-Centered Design</div>
+                    <div class="marquee-tag">AI Ethics</div>
+                    <div class="marquee-tag">Full Stack Development</div>
+                    <div class="marquee-tag">Responsive Web Design</div>
+                </div>
+            </div>
+
+
+
+
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Simula la carga durante 3 segundos
+            setTimeout(function () {
+                $('#loader').fadeOut();
+                $('.container').addClass('loaded');
+            }, 3000);
+        });
+
+    </script>
+</body>
+
+</html>
