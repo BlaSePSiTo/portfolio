@@ -23,13 +23,23 @@
     </div>
 
     <div class="container">
+
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
         <header>
-            <nav>
-                <div class="burger-menu" onclick="toggleMenu()">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+
+            <nav class="overlay">
+                <a href="#">
+                    <span>Sobre mí</span>
+                </a>
+                <a href="#">
+                    <span>Contacto</span>
+                </a>
             </nav>
         </header>
 
@@ -132,7 +142,7 @@
             setTimeout(function () {
                 $('#loader').fadeOut();
                 $('.container').addClass('loaded');
-            }, 3000);
+            }, 4000);
         });
 
     </script>
