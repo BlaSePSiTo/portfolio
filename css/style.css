@@ -42,9 +42,8 @@ body {
 header {
     position: fixed;
     width: 100%;
-    display: block;
-    z-index: 50;
-}
+    z-index: 15;
+}   
 
 .overlay {
     display: none;
@@ -91,7 +90,7 @@ header {
 }
 
 #page-content h2 {
-    padding: 150px 5.5rem 0 5.5rem;
+    padding: 130px 5.5rem 0 5.5rem;
     color: var(--main-text-color);
     font-size: 1.8em;
     line-height: 1.7em;
@@ -138,7 +137,7 @@ footer {
 
 .marquee-container {
     width: 100%;
-    margin: 50px auto;
+    margin: .1rem auto;
     overflow: hidden;
     position: absolute;
     left: 50%;
@@ -147,7 +146,7 @@ footer {
 
 #about {
     background-color: var(--main-bg-color);
-    padding: 20px;
+    padding: 20px 20px 0;
     color: var(--secondary-text-color);
     text-align: center;
     overflow: hidden;
@@ -181,7 +180,7 @@ footer {
     flex-wrap: wrap;
     position: relative;
     transition: opacity .3s ease-out;
-    top: 8rem;
+    top: 5rem;
 }
 
 .bar {
@@ -270,6 +269,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+    object-fit: cover;
 }
 
 .wrapper {
@@ -280,7 +280,7 @@ footer {
 .item {
     position: relative;
     display: block;
-    padding: 1.2em;
+    padding: 1.2em 1.2em 0;
     width: 50%;
 }
 
@@ -294,6 +294,21 @@ footer {
     text-transform: lowercase;
     width: 100%;
     text-shadow: 2px 2px 0 rgba(0,0,0,.15);
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        max-width: 500px;
+    }
+
+    .project-list .item {
+        width: 100%;
+    }
+
+    #portfolio-title {
+        font-size: 2em;
+    text-align: center;
+    }
 }
 
 @keyframes marquee {
