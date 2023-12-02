@@ -21,6 +21,20 @@ body {
     background-color: var(--main-bg-color);
 }
 
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--loader-bg-color);
+    z-index: 9999;
+    transition: opacity 0.5s;
+}
+
 .container.loaded {
     animation: fadeIn 3s ease-in-out;
 }
